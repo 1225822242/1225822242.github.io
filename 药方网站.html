@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>药房网站</title>
+<script type="text/javascript">
+function disp_prompt()
+{
+var day=prompt("请输入病例名称");  
+  switch(day)
+{
+case "感冒":
+  document.write("复方氨酚烷氨胶囊.美扑伪麻片.氨酚伪麻片");
+  break;
+case "便秘":
+  document.write("通便灵胶囊.麻仁丸");
+  break;
+case "视觉疲劳":
+  document.write("萘敏维滴眼液.眼氨肽滴眼液");
+  break;
+default:
+  break;
+}
+}
+</script>
+</head>
+
+<body>
+目前仅供查询：
+<li>感冒</li>
+<li>便秘</li>
+<li>视觉疲劳</li>
+<center>
+	<input name="提交" type="submit" onclick="disp_prompt()" value="查询按钮" />
+</center>
